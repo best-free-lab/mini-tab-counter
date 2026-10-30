@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Tab Counter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Mini Tab Counter</h1>
+
+    <section class="stats" aria-live="polite">
+      <div class="stat stat-primary">
+        <span class="value" id="total-tabs">–</span>
+        <span class="label">Total tabs</span>
+      </div>
+      <div class="stat">
+        <span class="value" id="window-tabs">–</span>
+        <span class="label">This window</span>
+      </div>
+      <div class="stat">
+        <span class="value" id="window-count">–</span>
+        <span class="label">Windows</span>
+      </div>
+    </section>
+
+    <p id="error" class="error" role="alert" hidden></p>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
